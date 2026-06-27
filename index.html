@@ -35,10 +35,11 @@
   .hero{
     background:var(--navy);
     text-align:center;
-    padding:0;
+    padding:54px 24px;
   }
   .hero-banner{
-    display:block;width:100%;max-width:560px;margin:0 auto;
+    display:block;width:100%;max-width:400px;max-height:84vh;object-fit:contain;
+    margin:0 auto;border-radius:20px;box-shadow:0 26px 60px rgba(0,0,0,.4);
   }
   .hero-diana{display:none;}
   .hero-cta{margin-top:40px;}
@@ -108,7 +109,8 @@
   .testi-arrow.prev{left:-6px;}
   .testi-arrow.next{right:-6px;}
   .testi-track img{
-    height:480px;width:auto;border-radius:14px;scroll-snap-align:center;flex-shrink:0;
+    height:auto;width:auto;max-height:480px;max-width:min(380px,86vw);
+    object-fit:contain;border-radius:14px;scroll-snap-align:center;flex-shrink:0;
     box-shadow:0 12px 34px rgba(15,39,71,.14);border:1px solid var(--gray);
   }
   .testi-hint{text-align:center;color:var(--muted);font-size:.86rem;margin-top:6px;}
@@ -271,6 +273,7 @@
   footer{background:var(--ink);color:rgba(255,255,255,.55);text-align:center;padding:34px 0;font-size:.85rem;}
 
   @media(max-width:640px){
+    .hero{padding:0;}
     .hero-banner{display:none;}
     .hero-diana{
       display:block;width:100%;max-width:none;height:100svh;
@@ -284,7 +287,7 @@
     .deliver-txt,.deliver-item:nth-child(even) .deliver-txt{padding:26px 24px;}
     .deliver-txt h3{justify-content:center;}
     .deliver-txt ul{text-align:left;display:inline-block;}
-    .testi-track img{height:380px;}
+    .testi-track img{max-height:420px;max-width:80vw;}
     .guarantee-card{flex-direction:column;text-align:center;padding:32px 24px;}
     .about-grid{flex-direction:column;text-align:center;gap:28px;}
     .about-figure{width:100%;max-width:300px;}
@@ -448,10 +451,9 @@
         <li><span class="check">✔</span><span class="item-name">Curso Coração Curado -</span><span class="item-price">R$ 147,00</span></li>
         <li><span class="check">✔</span><span class="item-name">Curso Sem Amarras -</span><span class="item-price">R$ 127,00</span></li>
         <li><span class="check">✔</span><span class="item-name">Devocional 365 Dias -</span><span class="item-price">R$ 87,00</span></li>
-        <li><span class="check">✔</span><span class="item-name">Resumo Bíblico Gênesis ao Apocalipse -</span><span class="item-price">R$ 29,90</span></li>
       </ul>
 
-      <div class="offer-strike-total">Tudo isso deveria custar: R$ 587,90</div>
+      <div class="offer-strike-total">Tudo isso deveria custar: R$ 558,00</div>
 
       <p class="offer-pitch">Mas hoje você tem acesso a Oração Profética para atrair a sua futura esposa, por apenas:</p>
       <div class="offer-installments">8X DE R$ 5,27</div>
